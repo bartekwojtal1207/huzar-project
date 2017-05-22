@@ -1,5 +1,8 @@
+$calendar_green : #346947;
+$calendar_red : #ce4545;
 body{
 font-size: 1em;
+font-family: 'Raleway', sans-serif;
 }
 *{
   box-sizing: border-box;
@@ -42,6 +45,11 @@ font-size: 1em;
   float: left;
   min-height: 1px;
 }
+.col-5{
+  width: 83.4%;
+  float: left;
+  min-height: 1px;
+}
 
 header{
   .pre-head{
@@ -53,7 +61,7 @@ header{
     position: relative;
     top: -1em;
     h1{
-      font-size: 1.6em;  // margin: auto;
+      font-size: 2.3em;
       margin-bottom: 0em;
     }
     p{
@@ -119,10 +127,15 @@ nav{
 }
 section.top_content{
   background-color: #f8f8f8;
+  padding-top: 2em;
   .slider{
     height: 28em;
     h3{
       display: inline-block;
+      margin-bottom: 0em;
+    }
+    p{
+      margin-bottom: 0em;
     }
     img{
       width: 100%;
@@ -142,35 +155,59 @@ section.top_content{
     }
   }//end of slider
   .undersection{
-    // display: inline-block;
     width: 70%;
     height: 12em;
+    h4{
+      margin: 0em;
+      margin-bottom: .5em;
+      font-size: 1.5em;
+      border-left: 5px solid red;
+      padding-left: 1em;
+    }
     p{
       display: inline-block;
       margin: 0em;
+      color: gray;
+      font-size: .8em;
     }
     img{
       width: inherit;
       height: inherit;
       margin: auto;
-      // height: 12.2em;
-      // width: 18em;
     }
     .under_desc{
       font-size: 0.8em;
       width: 62%;
       height: 50%;
       position: relative;
-      top: -7em;
+      top: -8em;
       left: 2em;
     }
 
+
   }//end of undersection
-  .news{
+  .help{
+    margin-bottom: .7em;
+    h4{
+      border-color: #d4ca25;
+    }
+  }
+  .online{
+    h4{
+      border-color: #3c9dc6;
+    }
+  }
+  .ranking{//zmienic nazawe
     float: right;
     width: 17em;
     height: 100%;
     background-color: white;
+    h4{
+      font-size: 1.2em;
+      color: $calendar_green;
+      border-color: $calendar_green;
+      margin-left: 1em;
+    }
     p{
       margin: 1em 0em 0em 2em;
     }
@@ -178,14 +215,20 @@ section.top_content{
       margin: 1.5em  0em 0em 2em;
       list-style: none;
       padding: 0em;
+      width: 80%;
       li{
         // margin: 0em 0em 1em 0em;
         height: 2.2em;
         font-size: .8em;
         line-height: 2.3em;
-        padding-left: 1em;
+        padding-left: 1.1em;
         &:nth-child(2n+1){
           background-color: #f8f8f8;
+        }
+        span{
+          margin-right: auto;
+          float: right;
+          clear: both;
         }
       }
     }
@@ -195,19 +238,59 @@ section.news{
   h3{
     text-align: center;
   }
+  h5{
+    color: #346947;
+    font-weight: bold;
+    font-size: 1em;
+    border-left: 0.3em solid #346947;
+    padding-left: 1em;
+  }
   .calendar_big{
-    margin-bottom: 3em;
+    margin-bottom: 2em;
+    margin-right: 1em;
+    padding-bottom: 2em;
+    box-shadow: -2px 18px 41px -10px rgba(179,179,179,1);
+    &:hover{
+      cursor: pointer;
+    }
+    &:hover .card{
+      background-color: $calendar_red;
+    }
+    &:hover .calendar_desc h3{
+      color: $calendar_red;
+    }
     .card{
       display: inline-block;
-      background: green;
+      background: $calendar_green;
       width: 5em;
       height: 6em;
       text-align: center;
       float: left;
-      margin: 0em 1em 0em 1em;
+      margin: 1.5em 1em 0em 1em;
+      color: white;
+      &::before{
+        content: "";
+        display: block;
+        width: .2em;
+        height: 1.3em;
+        background-color: #4d4d4f;
+        position: relative;
+        top: -.5em;
+        left: 1em;
+      }
+      &::after{
+        content: "";
+        display: block;
+        width: .2em;
+        height: 1.3em;
+        background-color: #4d4d4f;
+        position: relative;
+        top: -8.5em;
+        left: 3.8em;
+      }
       span{
         display: block;
-        font-size: 2.5em;
+        font-size: 2em;
       }
     }//end of card
     .calendar_desc{
@@ -215,8 +298,15 @@ section.news{
       display: flex;
       justify-content: flex-start;
       flex-direction: column;
+      button{
+        top: -3.5em !important;
+        left: -2em !important; //change position small button in big card calendar
+      }
       h3{
-        font-size: 1.04em;
+        font-size: 1.2em;
+        text-align: left;
+        color: $calendar_green;
+        text-transform: uppercase;
       }
       img{
         width: 1em;
@@ -226,11 +316,13 @@ section.news{
       p{
         color: gray;
         margin-top: 0em;
+        font-size: .8em;
       }
       .date{
-        text-align: center;
+        text-align: left;
         display: inline-block;
         margin: 0em;
+        margin-left: 2em;
         font-size: .7em;
       }
       button{
@@ -246,28 +338,162 @@ section.news{
     display: flex;
     flex-direction: column;
     .one_news{
-      margin-bottom: 1em;
+      margin-bottom: 2em;
+      padding-bottom: 1.1em;
+      box-shadow: -2px 18px 41px -10px rgba(179,179,179,1);
+      margin-right: 1em;
+      &:hover{
+        cursor: pointer;
+      }
+      &:hover .card{
+        background-color: $calendar_red;
+      }
+      &:hover h3{
+        color: $calendar_red;
+      }
       .card{
+        color: white;
         display: inline-block;
-        background: green;
+        background: $calendar_green;
         width: 5em;
         height: 5em;
         text-align: center;
         float: left;
         margin: 0em 1em 0em 1em;
+        &::before{
+          content: "";
+          display: block;
+          width: .2em;
+          height: 1.3em;
+          background-color: #4d4d4f;
+          position: relative;
+          top: -.5em;
+          left: 1em;
+        }&::after{
+          content: "";
+          display: block;
+          width: .2em;
+          height: 1.3em;
+          background-color: #4d4d4f;
+          position: relative;
+          top: -5.1em;
+          left: 3.8em;
+        }
+        p{
+          margin-top: 0em;
+        }
         span{
           display: block;
-          font-size: 1.5em;
+          //font-size: 1.5em;
         }
       }//end of card
       h3{
         margin: 0em;
+        font-size: .9em;
+        text-align: left;
+        color: $calendar_green;
+        text-transform: uppercase;
       }
       .date{
         display: inline-block;
+        font-size: .8em;
       }
-    }
+
+    }//end of one news
+  }
+  button{ // this is small button in calendar card
+  -webkit-border-radius: 3;
+  -moz-border-radius: 3;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 1px 2px #dedede;
+  -moz-box-shadow: 0px 1px 2px #dedede;
+  box-shadow: 0px 1px 2px #dedede;
+  color: #6e646e;
+  font-size: 10px;
+  background: #ffffff;
+  padding: 5px 12px 5px 12px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  margin-left: 1.5em;
   }
 
-
 }// end of section news
+section.contact{
+  background-image: url("../img/fusebrussels.jpg");
+  height: 23em;
+  h3{
+    color: white;
+    font-size: 3em;
+    margin-top: 2em;
+    margin-left: 1em;
+    font-weight: normal;
+  }
+  a{
+    text-decoration: none;
+
+  }
+  .btn_contact{
+    width: 80%;
+    margin-left: 3em;
+    height: 4em;
+    color: white;
+    /* margin: auto; */
+    text-align: center;
+    border: 1px solid white;
+    p{
+      font-size: 1.5em;
+      margin: auto;
+      line-height: 2.5em;
+    }
+  }
+}// end of contact_ section
+footer{
+  background-color: #3a3a3a;
+  color: white;
+  .footer_title{
+    width: 100%;
+    font-size: 2em;
+    margin-bottom: 0em;
+    margin-left: 0em;
+    border: 0em;
+    padding-bottom: 0em;
+  }
+  span{
+    color: $calendar_green;
+    font-weight:bold;
+  }
+  p{
+    width: 80%;
+    font-size: .8em;
+    letter-spacing: 1.5px;
+    opacity: .8;
+    margin-top: 2.5em;
+  }
+  h3{
+    margin: 2em 0em .5em 1em;
+    padding-bottom: .5em;
+    font-size: 2em;
+    border-bottom: 1px solid white;
+    width: 45%;
+    font-weight: normal;
+  }
+  ul{
+    display: inline-block;
+    list-style: none;
+    li{
+      padding-bottom: .5em;
+      opacity: .8;
+    }
+  }
+  .after_footer{
+    max-width: none !important;
+    background-color: #303030;
+    height: 4em;
+    p{
+      font-size: .8em;
+      opacity: 1;
+      color: white;
+      line-height: 5em;
+    }
+  }
+}
