@@ -1,0 +1,75 @@
+body {
+  font-size: 1em;
+  font-family: 'Raleway', sans-serif !important;
+
+}
+* {
+  box-sizing: border-box; }
+#produkty{
+    border-bottom: .1em solid white;
+    font-weight: bold;
+  }
+header{
+    margin-bottom: 1em;
+    .header_title{
+      position: relative;
+      top: 1em;
+      margin-left: 1em;
+    }
+  };
+section.site_name{
+  background-color: #3e8042;
+  color: white;
+  margin-bottom: 2em;
+  h1{//sprawdzic w innych plkach
+    margin: 1em 0em 1em 0em;
+  }
+  p{
+    line-height: 7em;
+    margin-right: 1em;
+  }
+};
+section.content_dealers{
+  h3{
+    font-weight: bold;
+    margin: 2em 0em 4em 0em;
+  }
+  ul.dealers_list{
+    margin-top: 12em;
+    margin-left: 1.9em;
+    li{
+      list-style: none;
+      display: inline-block;
+      margin: 1em ;
+      margin-bottom: 2em;
+      .dealers_list_element{
+        padding: .5em;
+        height: 10em;
+        box-shadow: -2px 18px 41px -10px rgba(179,179,179,1);
+      }
+      h4{
+        margin-top: 1.5em;
+        color: #346947;
+        font-weight: bold;
+        font-size: 1em;
+      }
+      p{
+        font-size: .8em;
+        color: gray;
+        margin: 0em;
+      }
+    }
+  }
+  .client_title{
+    margin: 0em;
+    margin: 2em 0em 2em 0em;
+  }
+  .table-responsive{
+    margin: 2em 0em 2em 0em;
+    th{
+      background-color: #363636;
+      color: white;
+      font-size: bold;
+    }
+  }
+};

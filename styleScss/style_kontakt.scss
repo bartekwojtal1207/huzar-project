@@ -1,0 +1,74 @@
+header{
+    margin-bottom: 1em;
+    .header_title{
+      position: relative;
+      top: 1em;
+      margin-left: 1em;
+    }
+  };
+section.site_name{
+  background-color: #3e8042;
+  color: white;
+  h1{//sprawdzic w innych plkach
+    margin: 1em 0em 1em 0em;
+  }
+  p{
+    line-height: 7em;
+    margin-right: 1em;
+  }
+};
+section.content_contact{
+  margin-bottom: 5em;
+  #map{
+    height: 25em;
+    margin-bottom: 4em;
+  }
+  h3{
+    margin: 1em 1em 2em .3em;
+    font-weight: bold;
+
+  }
+  .form_title{
+    margin-left: 3.2em;
+  }
+  address.contact{
+    display: inline-block;
+    font-size: .9em;
+    margin: 1em;
+    width: 15em;
+    height: 6em;
+    strong{
+      font-size: 1.2em;
+    }
+  }
+  form.main_contact_form{
+    margin-left: 5em;
+    input{
+      margin-left: .5em;
+      margin-bottom: .5em;
+      &:focus{
+        color: #d42c0e;
+        border-color: #d42c0e;
+      }
+      &:last-of-type{
+        margin-bottom: 2em;
+        padding-top: 1.5em;
+        padding-bottom: 7em;
+      }
+    }
+    button{
+      margin-left: .5em;
+      width: 12em;
+      height: 3em;
+      background-color: #d42c0e;
+      font-weight: bold;
+      color: white;
+    }
+  }
+  h3.drive_title{
+    margin-left: 0em ;
+  }
+  p.drive{
+    color: gray;
+  }
+};// end of section content_contact

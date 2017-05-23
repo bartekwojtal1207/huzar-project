@@ -1,0 +1,92 @@
+body {
+  font-size: 1em;
+  font-family: 'Raleway', sans-serif !important;
+
+}
+* {
+  box-sizing: border-box; }
+header{
+    margin-bottom: 1em;
+    .header_title{
+      position: relative;
+      top: 1em;
+      margin-left: 1em;
+    }
+  };
+section.site_name{
+  background-color: #3e8042;
+  color: white;
+  margin-bottom: 2em;
+  h1{//sprawdzic w innych plkach
+    margin: 1em 0em 1em 0em;
+  }
+  p{
+    line-height: 7em;
+    margin-right: 1em;
+  }
+};
+section.content_update{
+  background-color: #fafafa;
+  h3{
+    font-weight: bold;
+  }
+  th{
+    font-size: 2em;
+    line-height: 5em;
+    color: white;
+    height: 5em;
+  }
+  .table_title{
+    color: black;
+  }
+  .table-responsive{
+    margin-top: 2em;
+  }
+  #header_standard{
+    background-color: #438a43;
+  }
+  #add_header{
+   background-color: #387141;
+  }
+  #corpo_header{
+    background-color: #2e5d3e;
+  }
+  #standard_btn{
+    background-color: #438a43;
+    color: white;
+    font-weight: bold;
+  }
+  #add_btn{
+    background-color: #387141;
+    color: white;
+    font-weight: bold;
+  }
+  #corpo_btn{
+    background-color: #2e5d3e;
+    color: white;
+    font-weight: bold;
+  }
+
+  tr{
+  height: 5em;
+  }
+  td{
+    box-shadow: 0px 0px 11px -1px rgba(204,204,204,1);
+    max-width: 10em;
+    button{
+      width: 14em;
+      height: 3em;
+      margin-left: 2em;
+      margin-top: .3em;
+    }
+  }
+  // this is icon in table
+  .fa-remove:before, .fa-close:before, .fa-times:before {
+    color: red;
+    font-size: 2em;
+  }
+  .fa-check {
+    color: green;
+    font-size: 2em;
+  }
+};

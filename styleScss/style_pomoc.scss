@@ -1,0 +1,74 @@
+body {
+  font-size: 1em;
+  font-family: 'Raleway', sans-serif !important;
+
+}
+* {
+  box-sizing: border-box; }
+header{
+    margin-bottom: 1em;
+    .header_title{
+      position: relative;
+      top: 1em;
+      margin-left: 1em;
+    }
+  };
+section.site_name{
+  background-color: #3e8042;
+  color: white;
+  h1{
+    margin: 1em 0em 1em 0em;
+  }
+  p{
+    line-height: 7em;
+    margin-right: 1em;
+  }
+};
+section.content_help{
+  padding-top: 5em;
+  h3{
+    font-weight: bold;
+    margin-bottom: 3em;
+  }
+  ul{
+    li{
+      border-top: 1px solid lightgray;
+      border-bottom: 1px solid lightgray;
+      height: 3em;
+      line-height: 2.5em;
+      list-style-image: url("../img/arrow.png");
+      &:last-of-type{
+        list-style: none;
+      }
+      &:hover{
+        cursor: pointer;
+      }
+      &:active{
+        list-style-image: url("../img/arrow_green.png");
+      }
+      .new_list{
+        font-size: .8em;
+        display: none;
+        li{
+          list-style: none !important;
+          list-style-image: none !important;
+          color: green;
+          border: none;
+          height: 1.3em;
+        }
+      }
+    }
+  }//end of ul
+  .search_help{
+    input{
+      width: 70%;
+      display: inline-block;
+    }
+    button{
+      color: white;
+      font-weight: bold;
+      background-color: #8dc63f;
+      width: 9em;
+    }
+  }
+}

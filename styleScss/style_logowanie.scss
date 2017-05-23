@@ -1,0 +1,71 @@
+body {
+  font-size: 1em;
+  font-family: 'Raleway', sans-serif !important;
+
+}
+* {
+  box-sizing: border-box; }
+header{
+    margin-bottom: 1em;
+    .header_title{
+      position: relative;
+      top: 1em;
+      margin-left: 1em;
+    }
+  };
+section.site_name{
+  background-color: #3e8042;
+  color: white;
+  h1{
+    margin: 1em 0em 1em 0em;
+  }
+  p{
+    line-height: 7em;
+    margin-right: 1em;
+  }
+};
+section.content_logowanie{
+  padding-bottom: 10em;
+  h1{
+    margin-top: 2em;
+  }
+  p{
+    width: 50%;
+    color: gray;
+    margin: auto;
+  }
+  .input-group{
+    margin: auto;
+    padding-top: 5em;
+    p.form_desc{
+      font-size: 1.7em;
+      width: 100%;
+      margin-bottom: 1em;
+    }
+    input{
+      display: block;
+      margin-bottom: 2em;
+      height: 4em;
+      &:focus{
+        color: red;
+        border-color: red;
+        //background-color: blue;
+      }
+    }
+  }
+  .main_button{
+    text-align: left;
+    margin-left: 4em;
+    input#checkbox_input{
+      display: inline-block;
+      margin-bottom: 0em ;
+      margin-right: 1em;
+    }
+    button{
+      margin-left: 8.5em;
+      background-color: #8dc63f;
+      color: white;
+      font-weight: bold;
+    }
+  }
+};

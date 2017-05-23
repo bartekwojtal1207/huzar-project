@@ -1,0 +1,101 @@
+body {
+  font-size: 1em;
+  font-family: 'Raleway', sans-serif !important;
+
+}
+* {
+  box-sizing: border-box; }
+#produkty{
+    border-bottom: .1em solid white;
+    font-weight: bold;
+  }
+header{
+    margin-bottom: 1em;
+    .header_title{
+      position: relative;
+      top: 1em;
+      margin-left: 1em;
+    }
+  };
+section.site_name{
+  background-color: #3e8042;
+  color: white;
+  margin-bottom: 2em;
+  h1{//sprawdzic w innych plkach
+    margin: 1em 0em 1em 0em;
+  }
+  p{
+    line-height: 7em;
+    margin-right: 1em;
+  }
+};
+section.content_product{
+  margin-bottom: 2em;
+  a{
+    color: black;
+    text-decoration: none;
+  }
+  p{
+    cursor: pointer;
+    font-size: .9em;
+  }
+  .slider_winsad{
+    margin-top: 5em;
+    img{
+      display: inline-block;
+      width: 45em;
+    }
+    .next_photo{
+      display: inline-block;
+      width: 2.5em;
+      height: 2.5em;
+      background-color: #cccccc;
+      &:hover{
+        cursor: pointer;
+      }
+      img{
+        padding-left: .1em;
+        padding-top: .1em;
+        width: 2.3em;
+        height: 2.3em;
+      }
+    }
+    .desc_img{
+      margin-top: 1em;
+      font-size: .9em;
+      display: block;
+      color: green;
+    }
+  }//end of slider_winsad
+  .desc_product{
+    h3{
+      margin: 2em 0em 1em 0em;
+    }
+    p{
+      font-size: 1em;
+      color: gray;
+    }
+    span{
+      color: red;
+    }
+    blockquote{
+      border-color: #346947;
+    }
+  }
+  .menu_product{
+    margin-top: 3em;
+    li{
+      width: 10em;
+      height: 10em;
+      display: inline-block;
+      text-align: center;
+      line-height: 10em;
+      margin-right: 1em;
+      margin-bottom: 2em;
+      box-shadow: -2px 18px 41px -10px rgba(179,179,179,1);
+      &:hover{
+        cursor: pointer;
+      }
+    }
+  }
+};
