@@ -1,0 +1,71 @@
+body {
+  font-size: 1em;
+  font-family: 'Raleway', sans-serif !important; }
+
+* {
+  box-sizing: border-box; }
+
+header {
+  margin-bottom: 1em; }
+  header .header_title {
+    position: relative;
+    top: 1em;
+    margin-left: 1em; }
+
+section.site_name {
+  background-color: #3e8042;
+  color: white;
+  margin-bottom: 2em; }
+  section.site_name h1 {
+    margin: 1em 0em 1em 0em; }
+  section.site_name p {
+    line-height: 7em;
+    margin-right: 1em; }
+
+section.content_update {
+  background-color: #fafafa; }
+  section.content_update h3 {
+    font-weight: bold; }
+  section.content_update th {
+    font-size: 2em;
+    line-height: 5em;
+    color: white;
+    height: 5em; }
+  section.content_update .table_title {
+    color: black; }
+  section.content_update .table-responsive {
+    margin-top: 2em; }
+  section.content_update #header_standard {
+    background-color: #438a43; }
+  section.content_update #add_header {
+    background-color: #387141; }
+  section.content_update #corpo_header {
+    background-color: #2e5d3e; }
+  section.content_update #standard_btn {
+    background-color: #438a43;
+    color: white;
+    font-weight: bold; }
+  section.content_update #add_btn {
+    background-color: #387141;
+    color: white;
+    font-weight: bold; }
+  section.content_update #corpo_btn {
+    background-color: #2e5d3e;
+    color: white;
+    font-weight: bold; }
+  section.content_update tr {
+    height: 5em; }
+  section.content_update td {
+    box-shadow: 0px 0px 11px -1px #cccccc;
+    max-width: 10em; }
+    section.content_update td button {
+      width: 14em;
+      height: 3em;
+      margin-left: 2em;
+      margin-top: .3em; }
+  section.content_update .fa-remove:before, section.content_update .fa-close:before, section.content_update .fa-times:before {
+    color: red;
+    font-size: 2em; }
+  section.content_update .fa-check {
+    color: green;
+    font-size: 2em; }

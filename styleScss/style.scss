@@ -8,6 +8,10 @@ section.top_content{
   padding-top: 1em;
   .slider{
     height: 33em;
+    .carousel-indicators{
+      margin-left: 1em;
+  
+    }
     h3{
       display: inline-block;
       margin-bottom: .5em;

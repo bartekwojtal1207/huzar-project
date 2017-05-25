@@ -1,0 +1,145 @@
+@media (max-width: 1199px) {
+  section.history h5.after::after{
+    left: 2.5em;
+  }
+  section.history .line_history::after{
+    top: -120em;
+    left: 32em;
+  }
+  @media (max-width: 1150px) {
+    section.content_update td button{
+      margin-left: 0em;
+    }
+  }
+  section.history .line_history::after{
+    top: -135em;
+    min-height: 134em
+  }
+  section.content_logowanie .main_button{
+    margin-left: 0em;
+  }
+  section.content_product .slider_winsad img{
+    width: 30em;
+  }
+}
+@media (max-width: 992px) {
+  header .header_panel p{
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  section.history h5.after::after{
+    display: none;
+  }
+  section.history .line_history::before{
+    display: none;
+  }
+  section.history .line_history::after{
+    display: none;
+  }
+  section.history h5.before::before{
+    display: none;
+  }
+  section.content_help .search_help button{
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+}
+@media (max-width: 1000px) {
+
+  footer{
+    h3{
+      font-size: 1.5em;
+    }
+  }
+}
+@media (max-width: 991px) {
+  .help{
+    margin-top: 3em;
+  }
+  .under_desc{
+    width: 17em;
+  }
+  section.top_content .ranking{
+    margin-top: 7em;
+    float: left;
+    margin-bottom: 2em;
+  }
+  section.content_logowanie .main_button{
+    margin-left: 10em;
+  }
+}
+@media (max-width: 775px) {
+  section.history h5.before{
+    margin-left: 1em;
+  }
+  section.history h5.after{
+    margin-right: 1em;
+  }
+}
+@media (max-width: 615px) {
+  section.top_content .slider{
+    height: 25em;
+  }
+  section.contact h3{
+    font-size: 2em;
+  }
+  section.content_dealers img{
+    width: 80%;
+  }
+  section.content_contact form.main_contact_form{
+    margin-left: 1em;
+  }
+  section.content_logowanie .main_button button{
+    margin-left: 0em;
+  }
+}
+
+@media (max-width: 527px) {
+  section.content_product .slider_winsad img{
+    width: 20em;
+  }
+}
+@media (max-width: 480px) {
+  section.top_content .slider .section_title{
+    top:-10em;
+  }
+}
+@media (max-width: 450px) {
+  section.top_content .slider{
+    height: 20em;
+  }
+  section.content_dealers ul.dealers_list li p{
+    font-size: .6em;
+  }
+}
+
+@media (max-width: 380px) {
+  nav .nav_menu{
+    padding: 0em;
+  }
+  section.content_product .slider_winsad img{
+    width: 15em;
+  }
+}
+@media (max-width: 370px) {
+  section.top_content .slider{
+    height: 15em;
+  }
+}
+@media (max-width: 350px) {
+  section.top_content .slider .section_title span{
+    display: none;
+  }
+  section.site_name p{
+    display: none;
+  }
+  section.content_dealers ul.dealers_list li h4{
+    font-size: .9em;
+  }
+}
+
+@media (max-width: 320px) {
+  section.content_product .slider_winsad img{
+    width: 10em;
+  }
+}
