@@ -31,7 +31,6 @@ header{
     flex-direction: row;
     justify-content: space-around;
     margin-top: 3em;
-  //  line-height: 5em;
     p{
       margin: 0em;
       color: gray;
@@ -111,10 +110,8 @@ footer{
   color: white;
   .footer_title{
     width: 100%;
-    font-size: 2em;
-    margin-bottom: 0em;
-    margin-left: 0em;
-    border: 0em;
+    font-size: 2.5em;
+    margin: 1.5em 0em 0em 0em;
     padding-bottom: 0em;
   }
   span{
@@ -128,17 +125,28 @@ footer{
     opacity: .8;
     margin-top: 2.5em;
   }
+
   h3{
-    margin: 2em 0em .5em 1em;
+    margin: 2em 0em .5em 0em;
     padding-bottom: .5em;
     font-size: 2em;
-    border-bottom: 1px solid white;
-    width: 48%;
+  //  border-bottom: 1px solid white;
     font-weight: normal;
+    &::after{
+      display: block;
+      background-color: white;
+      content: "";
+      width: 50%;
+      height: 1px;
+      position: relative;
+      top: .4em;
+    }
+
   }
   ul{
     display: inline-block;
     list-style: none;
+    padding-left: 10px;
     li{
       padding-bottom: .5em;
       opacity: .8;

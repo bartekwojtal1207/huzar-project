@@ -87,10 +87,8 @@ footer {
   color: white; }
   footer .footer_title {
     width: 100%;
-    font-size: 2em;
-    margin-bottom: 0em;
-    margin-left: 0em;
-    border: 0em;
+    font-size: 2.5em;
+    margin: 1.5em 0em 0em 0em;
     padding-bottom: 0em; }
   footer span {
     color: #346947;
@@ -102,22 +100,31 @@ footer {
     opacity: .8;
     margin-top: 2.5em; }
   footer h3 {
-    margin: 2em 0em .5em 1em;
+    margin: 2em 0em .5em 0em;
     padding-bottom: .5em;
     font-size: 2em;
-    border-bottom: 1px solid white;
-    width: 48%;
     font-weight: normal; }
+    footer h3::after {
+      display: block;
+      background-color: white;
+      content: "";
+      width: 50%;
+      height: 1px;
+      position: relative;
+      top: .4em; }
   footer ul {
     display: inline-block;
-    list-style: none; }
+    list-style: none;
+    padding-left: 10px; }
     footer ul li {
       padding-bottom: .5em;
       opacity: .8; }
   footer .after_footer {
     max-width: none !important;
     background-color: #303030;
-    height: 4em; }
+    height: 4em;
+    margin: auto;
+    width: 100%; }
     footer .after_footer p {
       font-size: .8em;
       opacity: 1;

@@ -5,26 +5,7 @@ body {
 }
 * {
   box-sizing: border-box; }
-header{
-    margin-bottom: 1em;
-    .header_title{
-      position: relative;
-      top: 1em;
-      margin-left: 1em;
-    }
-  };
-section.site_name{
-  background-color: #3e8042;
-  color: white;
-  margin-bottom: 2em;
-  h1{//sprawdzic w innych plkach
-    margin: 1em 0em 1em 0em;
-  }
-  p{
-    line-height: 7em;
-    margin-right: 1em;
-  }
-};
+
 section.content_update{
   background-color: #fafafa;
   h3{
@@ -38,6 +19,7 @@ section.content_update{
   }
   .table_title{
     color: black;
+
   }
   .table-responsive{
     margin-top: 2em;
@@ -66,7 +48,9 @@ section.content_update{
     color: white;
     font-weight: bold;
   }
-
+  th.text-center{
+    vertical-align: middle !important;
+  }
   tr{
   height: 5em;
   }

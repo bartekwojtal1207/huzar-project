@@ -6,7 +6,7 @@ var sass = require('gulp-sass');
   //   return gulp.src('js/*.js').pipe(jshint()).pipe(jshint.reporter('default'));
   // });
   gulp.task('sass', function() {
-    return gulp.src('styleScss/style.scss').pipe(sass({errLogToConsole: true})).pipe(gulp.dest('css'));
+    return gulp.src('styleScss/style_onas.scss').pipe(sass({errLogToConsole: true})).pipe(gulp.dest('css'));
   });
   gulp.task('sassRwd', function() {
     return gulp.src('styleScssRwd/styleRwd.scss').pipe(sass({errLogToConsole: true})).pipe(gulp.dest('cssRwd'));

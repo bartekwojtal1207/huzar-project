@@ -1,22 +1,11 @@
-header{
-    margin-bottom: 1em;
-    .header_title{
-      position: relative;
-      top: 1em;
-      margin-left: 1em;
-    }
-  };
-section.site_name{
-  background-color: #3e8042;
-  color: white;
-  h1{//sprawdzic w innych plkach
-    margin: 1em 0em 1em 0em;
-  }
-  p{
-    line-height: 7em;
-    margin-right: 1em;
-  }
-};
+body {
+  font-size: 1em;
+  font-family: 'Raleway', sans-serif !important;
+
+}
+* {
+  box-sizing: border-box; }
+  
 section.content_contact{
   margin-bottom: 5em;
   #map{
